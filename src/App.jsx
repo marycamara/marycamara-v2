@@ -1,4 +1,3 @@
-import Hero from './Sections/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import './App.css'
 
