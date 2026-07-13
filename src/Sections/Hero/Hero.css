@@ -1,0 +1,26 @@
+.hero {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  padding-bottom: 90px;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.hightlight {
+  color: var(--green-bright);
+  font-weight: 600;
+}
