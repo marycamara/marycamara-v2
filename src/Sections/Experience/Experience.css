@@ -1,0 +1,45 @@
+.experience {
+  padding: var(--section-padding);
+}
+
+.experience-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.experience-conntent {
+    display: grid;
+}
+.experience h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.experience h1::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: var(--lightest-navy);
+}
+
+.experience-item {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-button {
+  width: 200px;
+  height: fit-content;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.experience-details {
+  border-left: 2px solid var(--lightest-navy);
+  padding-left: 2rem;
+  flex: 1;
+}
