@@ -1,0 +1,35 @@
+.about {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.about h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.about h1::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: var(--lightest-navy);
+}
+
+.about-technology ul {
+  display: list-item;
+  font-weight: 400;
+}
+
+.about-technology li {
+  list-style-position: outside;
+  list-style: square;
+  padding-left: 20px;
+}
