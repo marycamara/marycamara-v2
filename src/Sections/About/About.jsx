@@ -9,16 +9,16 @@ export default function About() {
         I am a software engineer at xxx passionate about building user-focused application. I enjoy
         creating clean, accessible and responsive experience using mordern technolgies
       </p>
-      <h3>Here are some technologies I have been working with</h3>
+      <p>Here are some technologies I have been working with</p>
       <ul className="about-technology">
         {technologies.map((technology) => (
           <li key={technology}>{technology}</li>
         ))}
       </ul>
-      <div>
+      <p>
         In my free time, I'm nerdy about tech gadgets, love literary fiction, and love being
         outdoors(running/hiking).
-      </div>
+      </p>
     </section>
   );
 }

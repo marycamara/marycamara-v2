@@ -25,8 +25,11 @@
   background-color: var(--lightest-navy);
 }
 
+.about p {
+  word-spacing: 0.1rem;
+}
+
 .about-technology ul {
-  display: list-item;
   font-weight: 400;
 }
 
