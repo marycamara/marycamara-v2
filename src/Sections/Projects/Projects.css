@@ -1,0 +1,39 @@
+.projects {
+  padding: var(--section-padding);
+}
+
+.projects h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.projects h1::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: var(--lightest-navy);
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.project-card {
+  width: 280px;
+  padding: 1.5rem;
+  background-color: var(--light-navy);
+  border-radius: 8px;
+
+  min-height: 250px;
+  transition: background-color 0.2s ease;
+}
+
+.project-card:hover {
+  background-color: var(--navy-shadow);
+}
