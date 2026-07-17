@@ -1,14 +1,5 @@
 .about {
-  min-height: 100vh;
-  width: 50%;
-  padding: 4rem 8rem;
-  padding-bottom: 8rem;
-
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  padding: var(--section-padding);
 }
 
 .about h1 {

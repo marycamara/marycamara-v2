@@ -39,6 +39,11 @@
   --max-width: 900px;
 }
 
+.section-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
 /* Typography */
 
 /* Border / radius */

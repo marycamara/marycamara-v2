@@ -21,29 +21,40 @@ export default function Experince() {
       description: 'Providing technical support, troubleshooting hardware and software issues',
     },
   ];
+  // Finds the experience that matches the selected button
+  const selectedExperience = experiences.find((experience) => experience.id === activeExperince);
+
   return (
     <section className="experience" id="experience">
-      <div className="experience-container">
+      <div className="section-container">
         <h1>/ experience</h1>
-        {experiences.map((experience) => (
-          <div key={experience.id} className="experience-item">
-            <button
-              className="experience-button"
-              onClick={() =>
-                setActiveExperience(activeExperince === experience.id ? null : experience.id)
-              }
-            >
-              {experience.company}
-            </button>
-            {activeExperince === experience.id && (
-              <div className="experience-details">
-                <h3>{experience.role}</h3>
-                <p>{experience.date}</p>
-                <p> {experience.description}</p>
-              </div>
+
+        {/* Holds buttons on the left and details on the right */}
+        <div className="experience-content">
+          {/* Left side buttons */}
+          <div className="experience-buttons">
+            {experiences.map((experience) => (
+              <button
+                className="experience-button"
+                onClick={() =>
+                  setActiveExperience(activeExperince === experience.id ? null : experience.id)
+                }
+              >
+                {experience.company}
+              </button>
+            ))}
+          </div>
+          {/* Right side details */}
+          <div className="experience-details">
+            {selectedExperience && (
+              <>
+                <h3>{selectedExperience.role}</h3>
+                <p>{selectedExperience.date}</p>
+                <p> {selectedExperience.description}</p>
+              </>
             )}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );
