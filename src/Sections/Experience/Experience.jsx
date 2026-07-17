@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Experience.css';
 
 export default function Experince() {
-  const [activeExperince, setActiveExperience] = useState(null);
+  const [activeExperince, setActiveExperience] = useState(1);
 
   const experiences = [
     {
