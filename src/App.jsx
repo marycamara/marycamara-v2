@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer';
 import Hero from './Sections/Hero/Hero';
 import About from './Sections/About/About';
 import Experince from './Sections/Experience/Experience';
+import Projects from './Sections/Projects/Projects';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <About />
         <Experince />
+        <Projects />
       </main>
 
       <Footer />
