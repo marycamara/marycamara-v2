@@ -7,10 +7,10 @@ import './Navbar.css';
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="nav-logo">Mary Camara</div>
       <ul className="nav-links">
+        <div className="nav-logo">Mary Camara</div>
         <li>
-          <a href="#home">Home</a>
+          <a href="#hero">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -19,10 +19,7 @@ export default function Navbar() {
           <a href="#experience">Experience</a>
         </li>
         <li>
-          <a href="#project">Project</a>
-        </li>
-        <li>
-          <a href="contact"></a>
+          <a href="#projects">Project</a>
         </li>
       </ul>
 
