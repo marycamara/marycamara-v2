@@ -1,3 +1,7 @@
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+import GitHubIcon from '@mui/icons-material/Github';
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+
 import './Projects.css';
 
 export default function Projects() {
@@ -20,24 +24,6 @@ export default function Projects() {
       details: 'details',
       technology: 'technology',
     },
-    {
-      id: 4,
-      title: 'title',
-      details: 'details',
-      technology: 'technology',
-    },
-    {
-      id: 5,
-      title: 'title',
-      details: 'details',
-      technology: 'technology',
-    },
-    {
-      id: 6,
-      title: 'title',
-      details: 'details',
-      technology: 'technology',
-    },
   ];
   return (
     <section className="projects" id="projects">
@@ -47,7 +33,18 @@ export default function Projects() {
         <div className="project-list">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
-              <h3>{project.title}</h3>
+              <h3>
+                <a href="" target="_blank" rel="" className="nav-icons">
+                  <FolderOpenIcon />
+                </a>
+                {project.title}
+                <a href="" target="_blank" rel="" className="nav-icons">
+                  <GitHubIcon />
+                </a>
+                <a href="" target="_blank" rel="" className="nav-icons">
+                  <DriveFolderUploadIcon />
+                </a>
+              </h3>
               <p>{project.details}</p>
               <p>{project.technology}</p>
             </div>

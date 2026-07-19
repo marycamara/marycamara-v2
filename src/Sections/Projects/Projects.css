@@ -37,3 +37,8 @@
 .project-card:hover {
   background-color: var(--navy-shadow);
 }
+
+.nav-icons {
+  display: flex;
+  color: var(--green-bright);
+}
