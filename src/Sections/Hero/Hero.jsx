@@ -2,7 +2,7 @@ import './Hero.css';
 
 export default function Hero() {
   return (
-    <section className="hero" id="home">
+    <section className="hero" id="hero">
       <h1>
         hi, <span className="hightlight">mary</span> here
       </h1>

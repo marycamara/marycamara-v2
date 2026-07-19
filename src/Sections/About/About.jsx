@@ -3,7 +3,7 @@ import './About.css';
 export default function About() {
   const technologies = ['React.js', 'JavaScript', 'TypeScript', 'Python'];
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="section-container">
         <h1>/ about me</h1>
         <p>
