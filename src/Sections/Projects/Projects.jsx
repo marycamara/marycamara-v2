@@ -40,7 +40,7 @@ export default function Projects() {
     },
   ];
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="section-container">
         <h1>/ projects</h1>
 
