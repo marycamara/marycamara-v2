@@ -16,12 +16,13 @@
   background-color: var(--lightest-navy);
 }
 
-.project-list {
+.project-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   gap: 1rem;
-  flex-wrap: wrap;
-  padding-top: 2rem;
 }
 
 .project-card {
@@ -37,8 +38,20 @@
 .project-card:hover {
   background-color: var(--navy-shadow);
 }
-
-.nav-icons {
-  display: flex;
+/* 
+.folder-icon {
+  display: inline-block;
   color: var(--green-bright);
 }
+.project-icons {
+  display: flex;
+  margin-left: 6rem;
+  align-items: flex-end;
+  color: var(--green-bright);
+}
+
+.project-icons a {
+  color: var(--green-bright);
+  display: flex;
+  align-items: center;
+} */

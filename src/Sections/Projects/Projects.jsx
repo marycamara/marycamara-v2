@@ -30,21 +30,28 @@ export default function Projects() {
       <div className="section-container">
         <h1>/ projects</h1>
 
-        <div className="project-list">
-          {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <h3>
-                <a href="" target="_blank" rel="" className="nav-icons">
-                  <FolderOpenIcon />
-                </a>
-                {project.title}
-                <a href="" target="_blank" rel="" className="nav-icons">
+        <div className="project-container">
+          <ul className="project-grid">
+            <li className="project-card">
+              <div className="card-header">
+                <FolderOpenIcon />
+              </div>
+              <span className="external-links">
+                <a
+                  class="github-icon"
+                  href="https://github.com/marycamara"
+                  target="_blank"
+                  rel="noopener norferrer"
+                >
                   <GitHubIcon />
-                </a>
-                <a href="" target="_blank" rel="" className="nav-icons">
                   <DriveFolderUploadIcon />
                 </a>
-              </h3>
+              </span>
+            </li>
+          </ul>
+          {projects.map((project) => (
+            <div key={project.id} className="project-card">
+              <h3>{project.title} </h3>
               <p>{project.details}</p>
               <p>{project.technology}</p>
             </div>
